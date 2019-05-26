@@ -89,7 +89,7 @@ class App(QMainWindow):
 
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
-	ex.App()
+	ex = App()
 	ex.resize(ex.pixmap.width(), ex.pixmap.height())
 	ex.move(500, 450)
 	ex.setFixedSize(ex.size())
