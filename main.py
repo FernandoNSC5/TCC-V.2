@@ -33,7 +33,9 @@ class App(QMainWindow):
 
 		##########################
 		#	Usable Vars
-		self._TITLE = "Online Parallel Model Learning" 
+		self._TITLE = "Online Parallel Model Learning"
+		self.SCREENS = ["bg.png"]
+		self.SCREEN = 0 
 		self._LEFT = 10
 		self._TOP = 10
 		self._BG_WIDTH = 680;
@@ -51,7 +53,8 @@ class App(QMainWindow):
 
 		##########################
 		#	Pixmap
-		self.pixmap = QPixmap('src/bg.png')
+		self.auxIndex = "src/"+self.SCREENS[self.SCREEN]
+		self.pixmap = QPixmap(self.auxIndex)
 
 		##########################
 		#	Initializing UI
